@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Cursor Personalizado com Efeito Sepia</title>
+  <style>
+    body {
+      cursor: none; /* Oculta o cursor padrão do navegador */
+    }
+
+    #custom-cursor {
+      position: absolute;
+      width: 40px;
+      height: 40px;
+      background-color: rgba(255, 255, 255, 0.7);
+      border-radius: 50%;
+      pointer-events: none; /* Faz com que o elemento não receba eventos do cursor */
+      mix-blend-mode: multiply; /* Aplica o efeito de sepia */
+      display: none; /* Oculta o cursor personalizado inicialmente */
+    }
+  </style>
+</head>
+<body>
+
+<!-- Cursor Personalizado -->
+<div id="custom-cursor"></div>
+
+<!-- Seus elementos na página -->
+<div class="elemento-com-sepia">Elemento 1</div>
+<div class="elemento-com-sepia">Elemento 2</div>
+<div class="elemento-com-sepia">Elemento 3</div>
+
+<script>
+  // Função para atualizar a posição do cursor personalizado
+  function atualizarPosicaoCursor(event) {
+    const cursorPersonalizado = document.getElementById('custom-cursor');
+    cursorPersonalizado.style.left = event.clientX - cursorPersonalizado.offsetWidth / 2 + 'px';
+    cursorPersonalizado.style.top = event.clientY - cursorPersonalizado.offsetHeight / 2 + 'px';
+  }
+
+  // Atualizar a posição do cursor personalizado quando o mouse se mover
+  document.addEventListener('mousemove', atualizarPosicaoCursor);
+
+  // Exibir o cursor personalizado quando o mouse entrar em um elemento
+  const elementosComSepia = document.querySelectorAll(".elemento-com-sepia");
+  elementosComSepia.forEach((elemento) => {
+    elemento.addEventListener('mouseenter', function() {
+      const cursorPersonalizado = document.getElementById('custom-cursor');
+      cursorPersonalizado.style.display = 'block';
+    });
+
+    // Ocultar o cursor personalizado quando o mouse sair do elemento
+    elemento.addEventListener('mouseleave', function() {
+      const cursorPersonalizado = document.getElementById('custom-cursor');
+      cursorPersonalizado.style.display = 'none';
+    });
+  });
+</script>
+
+</body>
+</html>

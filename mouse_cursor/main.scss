@@ -1,0 +1,22 @@
+* {
+    cursor: url(./cursor.png), auto;
+}
+
+body {
+    background: #000011;
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+}
+
+.cursor {
+    width: 40px;
+    height: 40px;
+    display: block;
+    border-radius: 360px;
+    position: absolute;
+    background: greenyellow;
+    opacity:50%;
+    transition: all 0.1s;
+}
+

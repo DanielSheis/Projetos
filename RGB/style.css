@@ -1,0 +1,72 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+body{
+   height: 97vh;
+   width: 97vw;
+   background: black;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.RGB {
+    display: flex;
+    gap: 60px;
+}
+
+
+#R{
+    transition: all 1s;
+    color: red;
+    font-size: 100px;
+    cursor: pointer;
+}
+
+#R_on{
+    transition: all 1s;
+    font-size: 120px;
+	-webkit-text-stroke: 1px #ff3b3b;
+	text-shadow: 0 0 17px #ff0000, 0 0 200px #ff0000;
+	background-clip: none;
+    cursor: pointer;
+}
+
+
+
+#G{
+    transition: all 1s;
+    color: green;
+    font-size: 100px;
+    cursor: pointer;
+}
+
+#G_on{
+    transition: all 1s;
+    font-size: 120px;
+	-webkit-text-stroke: 1px rgb(0, 175, 0);
+	text-shadow: 0 0 17px green, 0 0 200px green;
+	background-clip: none;
+    cursor: pointer;
+}
+
+
+
+#B{
+    transition: all 1s;
+    color: rgb(0, 110, 255);
+    font-size: 100px;
+    cursor: pointer;
+}
+
+#B_on{
+    transition: all 1s;
+    font-size: 120px;
+	-webkit-text-stroke: 1px rgb(84, 158, 255);
+	text-shadow: 0 0 17px rgb(0, 110, 255), 0 0 200px rgb(0, 110, 255);
+	background-clip: none;
+    cursor: pointer;
+}

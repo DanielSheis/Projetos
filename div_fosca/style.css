@@ -1,0 +1,35 @@
+body {
+    background-image: url(./star-trails-snow-mountains-4k-rc-1366x768.jpg);
+    height: 97vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.conteiner{
+    width: 800px;
+    height: 450px;
+    background: rgb(214, 214, 214);
+    border-radius: 10px;
+    opacity: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.conteiner h1 {
+    font-size: 40px;
+}
+
+.conteiner_sub_docker{
+    display: flex;
+    gap: 70px;
+}
+
+.conteiner_sub {
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    background: rgb(105, 105, 105);
+    opacity: 100%;
+}
