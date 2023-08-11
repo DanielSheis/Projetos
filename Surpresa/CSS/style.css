@@ -1,0 +1,105 @@
+* {
+    padding: 0;
+    margin: 0;
+    letter-spacing: 1px;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(to top,#004AAD, #53D0E0);
+}
+
+header {
+    text-align: center;
+}
+
+main {
+    height: 400px;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.img_pensando {
+    width: 120px;
+}
+
+main p {
+    width: 220px;
+    text-align: center;
+    font-size: 22px;
+}
+
+label img {
+width: 50px;
+}
+
+#nome {
+    width: 200px;
+    height: 40px;
+    border-radius: 16px;
+    background: #53D0E0;
+    border: 0;
+    outline: none;
+    padding: 2px 15px;
+}
+
+footer {
+    position: absolute;
+    bottom: 1px;
+    left: 0;
+    right: 0;
+}
+
+/* Design responsivo */
+
+@media (min-width: 668px) {
+    header {
+        font-size: 28px;
+    }
+
+    .img_pensando {
+        width: 170px;
+    }
+
+    main p {
+        font-size: 28px;
+        width: 400px;
+    }
+
+    label img {
+        width: 70px;
+    }
+
+    #nome {
+        font-size: 20px;
+        width: 300px;
+        padding: 18px 15px;
+    }
+}
+
+@media (min-width: 1200px) {
+    header {
+        font-size: 34px;
+    }
+
+    main p {
+        font-size: 35px;
+        width: 500px;
+    }
+
+    label img {
+        width: 90px;
+    }
+
+    #nome {
+        font-size: 25px;
+        width: 450px;
+        padding: 20px 15px;
+        border-radius: 28px;
+    }
+}
